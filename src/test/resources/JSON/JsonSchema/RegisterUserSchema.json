@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "user_name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "domicile": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "user_name",
+        "email",
+        "domicile",
+        "role",
+        "token"
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}
