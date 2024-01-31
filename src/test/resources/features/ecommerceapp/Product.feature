@@ -1,5 +1,6 @@
 Feature: Product
 
+  @Product
   Scenario: Post product with valid data
     Given Post product with json "PostProductValid.json"
     When Send request post product
@@ -7,18 +8,21 @@ Feature: Product
     And Response body message was "success insert product"
     And Validate json schema "PostProductValidSchema.json"
 
+  @Product
   Scenario: Get list product sales
     Given Get list product sales
     When Send request get product sales
     Then Status code should be 200
     And Response body message was "success read products."
 
+  @Product
   Scenario: Get all products
     Given Get all products
     When Send request get all products
     Then Status code should be 200
     And Response body message was "success read products."
 
+  @Product
   Scenario Outline: Get product with valid parameter
     Given Get product with parameter "<parameter>"
     When Send request get product with parameter
@@ -29,6 +33,7 @@ Feature: Product
       | parameter |
       | Baju      |
 
+  @Product
   Scenario Outline: Get product with unavailable parameter
     Given Get product with parameter "<parameter>"
     When Send request get product with parameter
@@ -39,6 +44,7 @@ Feature: Product
       | parameter |
       | abcde     |
 
+  @Product
   Scenario Outline: Get product with valid product id
     Given Product with id <id>
     When Send request get product with id
@@ -50,6 +56,7 @@ Feature: Product
       | id |
       | 3  |
 
+  @Product
   Scenario Outline: Get product with unavailable product id
     Given Product with id <id>
     When Send request get product with id
@@ -58,6 +65,7 @@ Feature: Product
       | id  |
       | 100 |
 
+  @Product
   Scenario Outline: Get product with invalid product id
     Given Get product with invalid id "<id>"
     When Send request get product with id
@@ -68,6 +76,7 @@ Feature: Product
       | id    |
       | abcde |
 
+  @Product
   Scenario Outline: Update product data with valid product id
     Given Update product data with product id <id> and json "<json>"
     When Send request put product data
@@ -78,6 +87,7 @@ Feature: Product
       | id | json                      |
       | 13 | UpdateProductValidID.json |
 
+  @Product
   Scenario Outline: Post image with valid product id
     Given Product with id <id> and image "<image>"
     When Send request post image
@@ -88,6 +98,7 @@ Feature: Product
       | id | image          |
       | 13 | airjordan3.jpg |
 
+#  @Product
 #  Scenario Outline: Delete image with valid product id and image id
 #    Given Product with id <product_id> and image with id <image_id>
 #    When Send request delete image
@@ -98,6 +109,7 @@ Feature: Product
 #      | product_id | image_id |
 #      | 13         | 19       |
 
+#  @Product
 #  Scenario Outline: Delete product with valid product id
 #    Given Product with id <id>
 #    When Send request delete product
@@ -108,6 +120,7 @@ Feature: Product
 #      | id |
 #      | 13 |
 
+  @Product
   Scenario Outline: Delete product with product id not belong to the user
     Given Product with id <id>
     When Send request delete product
