@@ -1,0 +1,192 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "order_id": {
+              "type": "integer"
+            },
+            "product_name": {
+              "type": "string"
+            },
+            "product_price": {
+              "type": "integer"
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "sub_total": {
+              "type": "integer"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            },
+            "order": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "user_id": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "payment_method": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "invoice": {
+                  "type": "string"
+                },
+                "total": {
+                  "type": "integer"
+                },
+                "virtual_acc": {
+                  "type": "string"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "updated_at": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "user_id",
+                "address",
+                "payment_method",
+                "status",
+                "invoice",
+                "total",
+                "virtual_acc",
+                "created_at",
+                "updated_at"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "order_id",
+            "product_name",
+            "product_price",
+            "quantity",
+            "sub_total",
+            "created_at",
+            "updated_at",
+            "order"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "order_id": {
+              "type": "integer"
+            },
+            "product_name": {
+              "type": "string"
+            },
+            "product_price": {
+              "type": "integer"
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "sub_total": {
+              "type": "integer"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            },
+            "order": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "user_id": {
+                  "type": "integer"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "payment_method": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "invoice": {
+                  "type": "string"
+                },
+                "total": {
+                  "type": "integer"
+                },
+                "virtual_acc": {
+                  "type": "string"
+                },
+                "created_at": {
+                  "type": "string"
+                },
+                "updated_at": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "user_id",
+                "address",
+                "payment_method",
+                "status",
+                "invoice",
+                "total",
+                "virtual_acc",
+                "created_at",
+                "updated_at"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "order_id",
+            "product_name",
+            "product_price",
+            "quantity",
+            "sub_total",
+            "created_at",
+            "updated_at",
+            "order"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}

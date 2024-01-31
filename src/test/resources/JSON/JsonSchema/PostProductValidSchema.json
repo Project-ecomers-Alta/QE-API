@@ -8,32 +8,32 @@
     "data": {
       "type": "object",
       "properties": {
-        "domicile": {
-          "type": "string"
-        },
-        "email": {
-          "type": "string"
-        },
-        "id": {
+        "user_id": {
           "type": "integer"
         },
-        "role": {
+        "name": {
           "type": "string"
         },
-        "token": {
+        "description": {
           "type": "string"
         },
-        "user_name": {
+        "category": {
           "type": "string"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "integer"
         }
       },
       "required": [
-        "domicile",
-        "email",
-        "id",
-        "role",
-        "token",
-        "user_name"
+        "user_id",
+        "name",
+        "description",
+        "category",
+        "quantity",
+        "price"
       ]
     }
   },
