@@ -15,6 +15,8 @@ public class EcommerceApp {
     public static String GET_USERS = Constants.BASE_URL + "/users?search={param}";
     public static String GET_ALL_ORDERS = Constants.BASE_URL + "/orders";
     public static String GET_ORDERS = Constants.BASE_URL + "/orders?search={id}";
+    public static String USER_DATA = Constants.BASE_URL + "/user";
+    public static String USER_SHOP = Constants.BASE_URL + "/user/shop";
     public static String PRODUCT_USER = Constants.BASE_URL + "/product";
     public static String PRODUCT_SALES = Constants.BASE_URL + "/product-penjualan";
     public static String GET_PRODUCTS = Constants.BASE_URL + "/products?search={param}";
@@ -147,4 +149,31 @@ public class EcommerceApp {
                     .header("Authorization", "Bearer " + Constants.ADMIN_TOKEN)
                     .pathParam("id", id);
         }
+    @Step ("Get user login")
+    public void getUserLogin(){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN);
+    }
+    @Step ("Put User with valid data")
+    public void putUserValidData(File json){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
+                .contentType(ContentType.JSON).body(json);
+    }
+    @Step ("Get user shop")
+    public void getUserShop(){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN);
+    }
+    @Step ("Update user shop with valid data")
+    public void putUserValidShop(File json){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
+                .contentType(ContentType.JSON).body(json);
+    }
+    @Step ("Delete user login data")
+    public void deleteUserLoginData(){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN);
+    }
 }
