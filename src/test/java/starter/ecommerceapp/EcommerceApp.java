@@ -22,6 +22,8 @@ public class EcommerceApp {
     public static String UPDATE_PRODUCT_ID = Constants.BASE_URL + "/product/{id}";
     public static String POST_IMAGE = Constants.BASE_URL + "/product/{id}/image";
     public static String DELETE_IMAGE = Constants.BASE_URL + "/product/{product_id}/image/{image_id}";
+    public static String POST_CART = Constants.BASE_URL + "/cart";
+    public static String GET_CART = Constants.BASE_URL + "/cart";
 
 
     @Step ("Register User")
@@ -104,5 +106,18 @@ public class EcommerceApp {
                 .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
                 .pathParam("product_id", product_id)
                 .pathParam("image_id", image_id);
+    }
+
+    @Step ("Post cart")
+    public void postCart (File json) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
+                .contentType(ContentType.JSON).body(json);
+    }
+
+    @Step ("Get All Cart")
+    public void getAllCart () {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN);
     }
 }
