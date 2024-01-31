@@ -14,7 +14,7 @@ public class EcommerceApp {
     public static String GET_ALL_USERS = Constants.BASE_URL + "/users";
     public static String GET_USERS = Constants.BASE_URL + "/users?search={param}";
     public static String GET_ALL_ORDERS = Constants.BASE_URL + "/orders";
-    public static String GET_ORDERS = Constants.BASE_URL + "/orders?{id}";
+    public static String GET_ORDERS = Constants.BASE_URL + "/orders?search={id}";
     public static String PRODUCT_USER = Constants.BASE_URL + "/product";
     public static String PRODUCT_SALES = Constants.BASE_URL + "/product-penjualan";
     public static String GET_PRODUCTS = Constants.BASE_URL + "/products?search={param}";
@@ -108,6 +108,7 @@ public class EcommerceApp {
                 .pathParam("image_id", image_id);
     }
 
+<<<<<<< Updated upstream
     @Step ("Post cart")
     public void postCart (File json) {
         SerenityRest.given()
@@ -119,5 +120,31 @@ public class EcommerceApp {
     public void getAllCart () {
         SerenityRest.given()
                 .header("Authorization", "Bearer " + Constants.BEARER_TOKEN);
+=======
+    @Step ("Get all users by admin")
+    public void getAllUser (){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.ADMIN_TOKEN);
+    }
+
+    @Step ("Get users by admin with parameter")
+    public void getUsers(String param){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.ADMIN_TOKEN)
+                .pathParam("param", param);
+    }
+
+    @Step ("Get all orders by admin")
+    public void getAllOrders(){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.ADMIN_TOKEN);
+    }
+
+    @Step ("Get Orders by admin with id")
+    public void getOrders(int id){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.ADMIN_TOKEN)
+                .pathParam("id", id);
+>>>>>>> Stashed changes
     }
 }
