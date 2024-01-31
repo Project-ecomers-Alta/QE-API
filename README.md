@@ -14,11 +14,11 @@ Ecommerce-App
 
 ## Tools
 - [Java 8](https://www.oracle.com/java/technologies/downloads/#java8)
-- [Selenium](https://www.selenium.dev/)
-- [SerenityBDD](https://serenity-bdd.info/)
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
 - IntelliJ IDEA Plugins :  [Cucumber for Java](https://plugins.jetbrains.com/plugin/7212-cucumber-for-java), [Gherkin](https://plugins.jetbrains.com/plugin/9164-gherkin)
 - [Maven](https://maven.apache.org/download.cgi)
+- [Postman](https://www.postman.com/downloads)
+- Serenity Rest BDD
 
 ## Installation
 - Install  [Java 8](https://www.oracle.com/java/technologies/downloads/#java8) and [Maven](https://maven.apache.org/download.cgi) on your device
