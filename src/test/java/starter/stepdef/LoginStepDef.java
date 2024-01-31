@@ -39,13 +39,13 @@ public class LoginStepDef {
     @Given("Login admin with json {string}")
     public void loginAdminWithJson(String json) {
         File jsonLoginAdmin = new File (Constants.REQ_BODY+json);
-        ecommerceapp.loginUser(jsonLoginAdmin);
+        ecommerceapp.loginAdmin(jsonLoginAdmin);
     }
 
     @When("Send request post login admin")
     public void sendRequestPostLoginAdmin() {
-        Response response = SerenityRest.when().post(EcommerceApp.LOGIN_USER);
+        Response response = SerenityRest.when().post(EcommerceApp.LOGIN_ADMIN);
         String tokenAdmin = response.jsonPath().get("data.token");
-        System.out.println("Token User: " + tokenAdmin);
+        System.out.println("Token Admin: " + tokenAdmin);
     }
 }

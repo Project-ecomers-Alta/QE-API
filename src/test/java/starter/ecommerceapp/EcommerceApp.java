@@ -10,6 +10,11 @@ import java.io.File;
 public class EcommerceApp {
     public static String REGISTER_USER = Constants.BASE_URL + "/register";
     public static String LOGIN_USER = Constants.BASE_URL + "/login";
+    public static String LOGIN_ADMIN = Constants.BASE_URL + "/login";
+    public static String GET_ALL_USERS = Constants.BASE_URL + "/users";
+    public static String GET_USERS = Constants.BASE_URL + "/users?search={param}";
+    public static String GET_ALL_ORDERS = Constants.BASE_URL + "/orders";
+    public static String GET_ORDERS = Constants.BASE_URL + "/orders?{id}";
     public static String PRODUCT_USER = Constants.BASE_URL + "/product";
     public static String PRODUCT_SALES = Constants.BASE_URL + "/product-penjualan";
     public static String GET_PRODUCTS = Constants.BASE_URL + "/products?search={param}";
@@ -27,6 +32,12 @@ public class EcommerceApp {
 
     @Step ("Login User")
     public void loginUser (File json) {
+        SerenityRest.given()
+                .contentType(ContentType.JSON).body(json);
+    }
+
+    @Step ("Login Admin")
+    public void loginAdmin (File json) {
         SerenityRest.given()
                 .contentType(ContentType.JSON).body(json);
     }
