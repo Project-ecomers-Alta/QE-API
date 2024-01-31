@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "user_id",
+        "name",
+        "description",
+        "category",
+        "quantity",
+        "price"
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}
