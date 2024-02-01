@@ -108,7 +108,7 @@ public class EcommerceApp {
                 .pathParam("image_id", image_id);
     }
 
-<<<<<<< Updated upstream
+
     @Step ("Post cart")
     public void postCart (File json) {
         SerenityRest.given()
@@ -120,7 +120,8 @@ public class EcommerceApp {
     public void getAllCart () {
         SerenityRest.given()
                 .header("Authorization", "Bearer " + Constants.BEARER_TOKEN);
-=======
+    }
+
     @Step ("Get all users by admin")
     public void getAllUser (){
         SerenityRest.given()
@@ -142,9 +143,8 @@ public class EcommerceApp {
 
     @Step ("Get Orders by admin with id")
     public void getOrders(int id){
-        SerenityRest.given()
-                .header("Authorization", "Bearer " + Constants.ADMIN_TOKEN)
-                .pathParam("id", id);
->>>>>>> Stashed changes
-    }
+            SerenityRest.given()
+                    .header("Authorization", "Bearer " + Constants.ADMIN_TOKEN)
+                    .pathParam("id", id);
+        }
 }
