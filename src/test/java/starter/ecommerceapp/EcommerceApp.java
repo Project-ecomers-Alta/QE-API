@@ -142,9 +142,36 @@ public class EcommerceApp {
     }
 
     @Step ("Get Orders by admin with id")
-    public void getOrders(int id){
-            SerenityRest.given()
-                    .header("Authorization", "Bearer " + Constants.ADMIN_TOKEN)
-                    .pathParam("id", id);
-        }
+    public void getOrders(int id) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.ADMIN_TOKEN)
+                .pathParam("id", id);
+    }
+
+    @Step ("Get all users by user")
+    public void getAllUserByUser (){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN);
+    }
+
+    @Step ("Get user by user with parameter")
+    public void getUsersByUser (String param){
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
+                .pathParam("param", param);
+    }
+
+    @Step ("Get all orders by user")
+    public void getOrdersByUser () {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN);
+    }
+
+    @Step ("Get order with id by user")
+    public void getOrderWithIDByUser (int id) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
+                .pathParam("id", id);
+    }
+
 }

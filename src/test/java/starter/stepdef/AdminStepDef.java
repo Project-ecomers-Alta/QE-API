@@ -63,4 +63,24 @@ public class AdminStepDef {
     public void responseBodyDataIdOrdersWas(int id) {
         SerenityRest.and().body(EcommerceAppResponses.DATA_ID_ORDERS, equalTo(id));
     }
+
+    @Given("Get all users by user")
+    public void getAllUsersByUser() {
+        ecommerceApp.getAllUserByUser();
+    }
+
+    @Given("Get users by user with parameter {string}")
+    public void getUsersByUserWithParameter(String parameter) {
+        ecommerceApp.getUsersByUser(parameter);
+    }
+
+    @Given("Get all orders by user")
+    public void getAllOrdersByUser() {
+        ecommerceApp.getOrdersByUser();
+    }
+
+    @Given("Get orders by user with id {int}")
+    public void getOrdersByUserWithId(int id) {
+        ecommerceApp.getOrderWithIDByUser(id);
+    }
 }
