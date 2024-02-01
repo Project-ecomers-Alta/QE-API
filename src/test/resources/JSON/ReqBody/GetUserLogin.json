@@ -1,0 +1,10 @@
+{
+  "message": "read success",
+  "data": {
+    "UserName": "hanapai",
+    "Domicile": "makasar",
+    "Email": "hanapi@gmail.com",
+    "PhoneNumber": "",
+    "Image": ""
+  }
+}

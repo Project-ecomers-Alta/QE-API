@@ -9,6 +9,5 @@ public class Constants {
     public static String IMAGE_DIR = DIR + "/src/test/resources/image";
     public static String REQ_BODY = JSON_DIR + "/ReqBody/";
     public static String JSON_SCHEMA = JSON_DIR + "/JsonSchema/";
-    public static String ADMIN_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE3MDY3MzAwNTEsInVzZXJJZCI6MX0.fM_2uiFKRSt1hPiz3BDWloaCfMFA0ApiFxgh4xalrO0";
-    public static String BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE3MDY3NzA1MTgsInVzZXJJZCI6MjB9.0du3A6ogU9ckk8qBT6iw_MrglTGiJY8PMmug9aUch24";
-}
+    public static String ADMIN_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE3MDY3Mzk4MDgsInVzZXJJZCI6NTZ9.90Yv4kFwVVXeWWAbNN86xdJhzMQqD9A3xz3QMc_Jkkg";
+    public static String BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE3MDY3MzczODAsInVzZXJJZCI6MTh9.iGXeFVR5kM4rS2ljN_7Aj_KlDC5zR6bui_wbgobVobw";

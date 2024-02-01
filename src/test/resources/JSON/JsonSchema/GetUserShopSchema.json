@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "ShopName": {
+          "type": "string"
+        },
+        "Tagline": {
+          "type": "string"
+        },
+        "Province": {
+          "type": "string"
+        },
+        "City": {
+          "type": "string"
+        },
+        "Subdistrict": {
+          "type": "string"
+        },
+        "Address": {
+          "type": "string"
+        },
+        "ShopImage": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ShopName",
+        "Tagline",
+        "Province",
+        "City",
+        "Subdistrict",
+        "Address",
+        "ShopImage"
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}
