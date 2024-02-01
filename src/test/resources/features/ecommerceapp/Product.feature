@@ -9,6 +9,14 @@ Feature: Product
     And Validate json schema "PostProductValidSchema.json"
 
   @Product
+  Scenario: Post product with valid data and without login
+    Given Post product with json "PostProductValid.json" and without login
+    When Send request post product
+    Then Status code should be 401
+    And Response body message was "missing or malformed jwt"
+    And Validate json schema "PostProductWithoutLoginSchema.json"
+
+  @Product
   Scenario: Get list product sales
     Given Get list product sales
     When Send request get product sales
@@ -61,6 +69,8 @@ Feature: Product
     Given Product with id <id>
     When Send request get product with id
     Then Status code should be 404
+    And Response body message was "error read data. record not found"
+    And Validate json schema "GetProductUnavailableIDSchema.json"
     Examples:
       | id  |
       | 100 |

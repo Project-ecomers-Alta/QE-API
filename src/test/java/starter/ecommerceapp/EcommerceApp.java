@@ -26,6 +26,7 @@ public class EcommerceApp {
     public static String DELETE_IMAGE = Constants.BASE_URL + "/product/{product_id}/image/{image_id}";
     public static String POST_CART = Constants.BASE_URL + "/cart";
     public static String GET_CART = Constants.BASE_URL + "/cart";
+    public static String DELETE_CART = Constants.BASE_URL + "/cart";
 
 
     @Step ("Register User")
@@ -50,6 +51,12 @@ public class EcommerceApp {
     public void postProduct (File json) {
         SerenityRest.given()
                 .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
+                .contentType(ContentType.JSON).body(json);
+    }
+
+    @Step ("Post Product Without Login")
+    public void postProductWithoutLogin (File json) {
+        SerenityRest.given()
                 .contentType(ContentType.JSON).body(json);
     }
 
@@ -120,6 +127,12 @@ public class EcommerceApp {
 
     @Step ("Get All Cart")
     public void getAllCart () {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN);
+    }
+
+    @Step ("Delete Cart")
+    public void deleteCart () {
         SerenityRest.given()
                 .header("Authorization", "Bearer " + Constants.BEARER_TOKEN);
     }

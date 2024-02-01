@@ -38,10 +38,12 @@ public class ProductStepDef {
     @When("Send request get product sales")
     public void sendRequestGetProductSales() {
         Response response = SerenityRest.when().get(EcommerceApp.PRODUCT_SALES);
-        int productID = response.jsonPath().get("data[0].id");
+        int productSalesID = response.jsonPath().get("data[0].id");
         int imageID = response.jsonPath().get("data[0].details_images[0].id");
-        System.out.println("Product ID: " + productID);
+        int userID = response.jsonPath().get("data[0].user_id");
+        System.out.println("Product Sales ID: " + productSalesID);
         System.out.println("Image ID: " + imageID);
+        System.out.println("User ID: " + userID);
     }
 
     @Given("Get all products")
@@ -51,7 +53,9 @@ public class ProductStepDef {
 
     @When("Send request get all products")
     public void sendRequestGetAllProducts() {
-        SerenityRest.when().get(EcommerceApp.PRODUCT_USER);
+        Response response = SerenityRest.when().get(EcommerceApp.PRODUCT_USER);
+        int productID = response.jsonPath().get("data[0].id");
+        System.out.println("Product ID: " + productID);
     }
 
     @Given("Get product with parameter {string}")
@@ -124,5 +128,11 @@ public class ProductStepDef {
     @When("Send request delete image")
     public void sendRequestDeleteImage() {
         SerenityRest.when().delete(EcommerceApp.DELETE_IMAGE);
+    }
+
+    @Given("Post product with json {string} and without login")
+    public void postProductWithJsonAndWithoutLogin(String json) {
+        File jsonPostProduct = new File (Constants.REQ_BODY + json);
+        ecommerceapp.postProductWithoutLogin(jsonPostProduct);
     }
 }
