@@ -52,7 +52,7 @@ public class UserStepDef {
 
     @When("Send request update user shop")
     public void sendRequestUpdateUserShop() {
-        SerenityRest.when().get(EcommerceApp.USER_SHOP);
+        SerenityRest.when().put(EcommerceApp.USER_SHOP);
     }
 
     @Given("Delete user login data")

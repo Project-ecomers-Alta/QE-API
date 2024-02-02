@@ -10,5 +10,5 @@ public class Constants {
     public static String REQ_BODY = JSON_DIR + "/ReqBody/";
     public static String JSON_SCHEMA = JSON_DIR + "/JsonSchema/";
     public static String ADMIN_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE3MDY3Mzk4MDgsInVzZXJJZCI6NTZ9.90Yv4kFwVVXeWWAbNN86xdJhzMQqD9A3xz3QMc_Jkkg";
-    public static String BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE3MDY3MzczODAsInVzZXJJZCI6MTh9.iGXeFVR5kM4rS2ljN_7Aj_KlDC5zR6bui_wbgobVobw";
+    public static String BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE3MDY4MTMxMDgsInVzZXJJZCI6Mn0.GBWN2ufl3LRM8gmkAd80XIR8St2uek_XgNwPOwghl7I";
 }

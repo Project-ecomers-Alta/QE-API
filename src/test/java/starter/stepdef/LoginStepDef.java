@@ -48,4 +48,45 @@ public class LoginStepDef {
         String tokenAdmin = response.jsonPath().get("data.token");
         System.out.println("Token Admin: " + tokenAdmin);
     }
+
+    @Given("Update password with valid data {string}")
+    public void updatePasswordWithValidData(String json) {
+        File jsonUpdatePassword = new File(Constants.REQ_BODY + json);
+        ecommerceapp.updatePassword(jsonUpdatePassword);
+    }
+
+    @When("Send request update password")
+    public void sendRequestUpdatePassword() {
+        SerenityRest.when().put(EcommerceApp.UPDATE_PASSWORD);
+    }
+
+    @Given("Login user without email {string}")
+    public void loginUserWithoutEmail(String json) {
+        File jsonLoginUserWithoutEmail = new File (Constants.REQ_BODY+json);
+        ecommerceapp.loginAdmin(jsonLoginUserWithoutEmail);
+    }
+
+    @Given("Login user without password {string}")
+    public void loginUserWithoutPassword(String json) {
+        File jsonLoginUserWithoutPassword = new File (Constants.REQ_BODY+json);
+        ecommerceapp.loginAdmin(jsonLoginUserWithoutPassword);
+    }
+
+    @Given("Login user invalid email {string}")
+    public void loginUserInvalidEmail(String json) {
+        File jsonLoginUserInvalidEmail = new File (Constants.REQ_BODY+json);
+        ecommerceapp.loginAdmin(jsonLoginUserInvalidEmail);
+    }
+
+    @Given("Update password without input data {string}")
+    public void updatePasswordWithoutInputData(String json) {
+        File jsonUpdatePasswordWithoutInput = new File(Constants.REQ_BODY + json);
+        ecommerceapp.updatePassword(jsonUpdatePasswordWithoutInput);
+    }
+
+    @Given("Update password minimum {string}")
+    public void updatePasswordMinimum(String json) {
+        File jsonUpdatePasswordMinimum = new File(Constants.REQ_BODY + json);
+        ecommerceapp.updatePassword(jsonUpdatePasswordMinimum);
+    }
 }

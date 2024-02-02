@@ -1,6 +1,6 @@
 Feature: Admin
 
-  @GetAllUsers
+  @Admin
   Scenario: Get all users by admin
     Given Get all users by admin
     When Send request get all users
@@ -8,7 +8,7 @@ Feature: Admin
     And Response body message was "Success searching data."
     And Validate json schema "AdminGetAllUsersSchema.json"
 
-  @GetUsers
+  @Admin
   Scenario Outline: Get users by admin with id
     Given Get users by admin with parameter "<parameter>"
     When Send request get users
@@ -19,7 +19,7 @@ Feature: Admin
       | parameter   |
       | super admin |
 
-  @GetAllOrders
+  @Admin
   Scenario: Get all orders by admin
     Given Get all orders by admin
     When Send request get all orders
@@ -27,7 +27,7 @@ Feature: Admin
     And Response body message was "Success searching data."
     And Validate json schema "AdminGetAllOrdersSchema.json"
 
-  @GetOrders
+  @Admin
   Scenario Outline: Get orders by admin with id
     Given Get orders by admin with id <id>
     When Send request get orders

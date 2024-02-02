@@ -11,6 +11,7 @@ public class EcommerceApp {
     public static String REGISTER_USER = Constants.BASE_URL + "/register";
     public static String LOGIN_USER = Constants.BASE_URL + "/login";
     public static String LOGIN_ADMIN = Constants.BASE_URL + "/login";
+    public static String UPDATE_PASSWORD = Constants.BASE_URL + "/update-password";
     public static String GET_ALL_USERS = Constants.BASE_URL + "/users";
     public static String GET_USERS = Constants.BASE_URL + "/users?search={param}";
     public static String GET_ALL_ORDERS = Constants.BASE_URL + "/orders";
@@ -37,6 +38,14 @@ public class EcommerceApp {
     @Step ("Login User")
     public void loginUser (File json) {
         SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
+                .contentType(ContentType.JSON).body(json);
+    }
+
+    @Step ("Update Password")
+    public void updatePassword (File json) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
                 .contentType(ContentType.JSON).body(json);
     }
 
