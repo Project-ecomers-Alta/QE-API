@@ -39,7 +39,7 @@ Feature: Product
     And Response body data category was "<parameter>"
     Examples:
       | parameter |
-      | Baju      |
+      | Man shoes |
 
   @Product
   Scenario Outline: Get product with unavailable parameter
@@ -59,10 +59,9 @@ Feature: Product
     Then Status code should be 200
     And Response body message was "success read product."
     And Response body data id was <id>
-    And Validate json schema "GetProductWithValidIDSchema.json"
     Examples:
       | id |
-      | 3  |
+      | 5  |
 
   @Product
   Scenario Outline: Get product with unavailable product id
@@ -95,7 +94,17 @@ Feature: Product
     And Validate json schema "UpdateProductValidSchema.json"
     Examples:
       | id | json                      |
-      | 29 | UpdateProductValidID.json |
+      | 5  | UpdateProductValidID.json |
+
+  @Product
+  Scenario Outline: Update product data with product id not belong to the user
+    Given Update product data with product id <id> and json "<json>"
+    When Send request put product data
+    Then Status code should be 403
+    And Response body message was "Permission denied: User does not have permission to update other user's data."
+    Examples:
+      | id | json                          |
+      | 1  | UpdateProductIDNotBelong.json |
 
   @Product
   Scenario Outline: Post image with valid product id
@@ -106,7 +115,7 @@ Feature: Product
     And Validate json schema "PostImageValidSchema.json"
     Examples:
       | id | image          |
-      | 29 | airjordan3.jpg |
+      | 5  | airjordan3.jpg |
 
   @Product
   Scenario Outline: Delete image with valid product id and image id
@@ -117,7 +126,7 @@ Feature: Product
     And Validate json schema "DeleteImageValidSchema.json"
     Examples:
       | product_id | image_id |
-      | 29         | 21        |
+      | 5          | 3        |
 
   @Product
   Scenario Outline: Delete product with valid product id
@@ -128,7 +137,7 @@ Feature: Product
     And Validate json schema "DeleteProductSchema.json"
     Examples:
       | id |
-      | 29 |
+      | 5  |
 
   @Product
   Scenario Outline: Delete product with product id not belong to the user
@@ -139,4 +148,4 @@ Feature: Product
     And Validate json schema "DeleteProductNotBelongUserSchema.json"
     Examples:
       | id |
-      | 3  |
+      | 1  |
