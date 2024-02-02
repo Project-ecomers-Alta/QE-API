@@ -27,7 +27,8 @@ public class EcommerceApp {
     public static String POST_CART = Constants.BASE_URL + "/cart";
     public static String GET_CART = Constants.BASE_URL + "/cart";
     public static String DELETE_CART = Constants.BASE_URL + "/cart";
-
+    public static String POST_GET_ORDER = Constants.BASE_URL + "/order";
+    public static String CANCEL_ORDERS = Constants.BASE_URL + "/orders/{order_id}";
 
     @Step ("Register User")
     public void registerUser (File json) {
@@ -219,5 +220,25 @@ public class EcommerceApp {
         SerenityRest.given()
                 .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
                 .pathParam("id", id);
+    }
+
+    @Step ("Post order")
+    public void postOrder (File json) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
+                .contentType(ContentType.JSON).body(json);
+    }
+
+    @Step ("Get order user")
+    public void getOrder () {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN);
+    }
+
+    @Step ("Cancel Orders")
+    public void cancelOrders (int id) {
+        SerenityRest.given()
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN)
+                .pathParam("order_id", id);
     }
 }
