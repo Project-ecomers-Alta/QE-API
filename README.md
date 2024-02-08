@@ -1,6 +1,5 @@
 # API Automation Testing
 
-QE Batch 13 Capstone Project at Alterra Academy
 
 ## Table of Contents
 
