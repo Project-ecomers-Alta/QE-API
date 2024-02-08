@@ -1,0 +1,1929 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "full_name": {
+              "type": "string"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "domicile": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string"
+            },
+            "created_at": {
+              "type": "string"
+            },
+            "updated_at": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "full_name",
+            "user_name",
+            "email",
+            "domicile",
+            "role",
+            "created_at",
+            "updated_at"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "message",
+    "data"
+  ]
+}
